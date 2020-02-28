@@ -7139,5 +7139,19 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 body {
-  background: black;
-  color: #fff; }
+  background: #f8f8f8;
+  color: #202020; }
+
+.page-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid silver; }
+  .page-header h1 {
+    line-height: 1;
+    font-size: 32px;
+    font-weight: normal;
+    margin: 0; }
+    .page-header h1 small {
+      display: block;
+      margin-top: 0.25rem;
+      font-size: 14px;
+      color: #505050; }

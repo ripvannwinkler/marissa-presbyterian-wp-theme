@@ -2,6 +2,25 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 body {
-  background: black;
-  color: #fff;
+  background: #f8f8f8;
+  color: #202020;
+}
+
+.page-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid silver;
+
+  h1 {
+    line-height: 1;
+    font-size: 32px;
+    font-weight: normal;
+    margin: 0;
+
+    small {
+      display: block;
+      margin-top: 0.25rem;
+      font-size: 14px;
+      color: #505050;
+    }
+  }
 }
