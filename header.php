@@ -1,7 +1,7 @@
 <?php
 
-$site_name = get_bloginfo("name");
-$site_desc = get_bloginfo("description");
+    $site_name = get_bloginfo("name");
+    $site_desc = get_bloginfo("description");
 
 ?>
 
@@ -13,14 +13,25 @@ $site_desc = get_bloginfo("description");
   <title>Marissa Presbyterian Church</title>
   <?php wp_head();?>
 </head>
-<body <?php body_class();?>>
+<body                          <?php body_class();?>>
 
 
 <header class="page-header">
-  <h1>
-    <?php echo get_bloginfo("name"); ?>
-    <?php if (!empty($site_desc)) {?>
-      <small><?php echo get_bloginfo("description"); ?></small>
-    <?php }?>
-  </h1>
+  <div class="row">
+    <div class="col-md-auto">
+      <h1>
+        <?php echo get_bloginfo("name"); ?>
+<?php if (!empty($site_desc)) {?>
+          <small><?php echo get_bloginfo("description"); ?></small>
+        <?php }?>
+      </h1>
+    </div>
+    <div class="col-md">
+	<?php
+        wp_nav_menu(array(
+            'theme_location' => 'header',
+            'menu_class' => 'menu header-menu'));
+    ?>
+    </div>
+  </div>
 </header>
