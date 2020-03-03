@@ -1,1 +1,3 @@
-console.log('test2');
+import "../css/app.scss";
+
+console.log("test2");

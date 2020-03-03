@@ -1,0 +1,10 @@
+{
+  "phpfmt.detect_indent": false,
+  "phpfmt.indent_with_space": 4,
+  "phpfmt.psr2": true,
+  "phpfmt.passes": [
+    // "AlignPHPCode",
+    "AlignDoubleSlashComments",
+    "DoubleToSingleQuote"
+  ]
+}

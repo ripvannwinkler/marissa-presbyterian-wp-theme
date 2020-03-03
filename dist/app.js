@@ -1,5 +1,6 @@
-"use strict";
+(function () {
+  'use strict';
 
-console.log('test2');
+  console.log("test2");
 
-//# sourceMappingURL=app.js.map
+}());

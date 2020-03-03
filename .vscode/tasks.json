@@ -4,31 +4,16 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "all",
-      "isBackground": true,
+      "type": "npm",
+      "script": "develop",
       "group": {
         "kind": "build",
         "isDefault": true
-      },
-      "dependsOn": [
-        "babel",
-        "sass"
-      ],
-      "problemMatcher": []
+      }
     },
     {
-      "label": "babel",
       "type": "npm",
-      "script": "babel-watch",
-      "group": "build",
-      "isBackground": true,
-      "problemMatcher": []
-    },
-    {
-      "label": "sass",
-      "type": "npm",
-      "script": "sass-watch",
-      "isBackground": true,
+      "script": "build",
       "group": "build",
       "problemMatcher": []
     }

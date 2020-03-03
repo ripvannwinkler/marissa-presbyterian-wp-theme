@@ -4,11 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "babel": "./node_modules/.bin/babel src/js/app.js --out-file dist/app.js -s",
-    "babel-watch": "./node_modules/.bin/babel src/js/app.js --watch --out-file dist/app.js -s",
-    "sass": "./node_modules/.bin/node-sass src/css/app.scss dist/app.css",
-    "sass-watch": "./node_modules/.bin/node-sass -w src/css/app.scss dist/app.css",
-    "build": "npm run sass && npm run babel"
+    "develop": "rollup -c --watch",
+    "build": "rollup -c"
   },
   "author": "",
   "license": "ISC",
@@ -16,7 +13,10 @@
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.6",
     "@babel/preset-env": "^7.8.6",
+    "@types/rollup": "^0.54.0",
     "bootstrap": "^4.4.1",
-    "node-sass": "^4.13.1"
+    "node-sass": "^4.13.1",
+    "rollup": "^1.32.0",
+    "rollup-plugin-scss": "^2.1.0"
   }
 }
