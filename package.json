@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "babel": "babel src/js/app.js --out-file lib/app.js -s",
-    "babel-watch": "babel src/js/app.js --watch --out-file lib/app.js -s",
-    "sass": "node-sass src/css/app.scss lib/app.css",
-    "sass-watch": "node-sass -w src/css/app.scss lib/app.css",
+    "babel": "./node_modules/.bin/babel src/js/app.js --out-file dist/app.js -s",
+    "babel-watch": "./node_modules/.bin/babel src/js/app.js --watch --out-file dist/app.js -s",
+    "sass": "./node_modules/.bin/node-sass src/css/app.scss dist/app.css",
+    "sass-watch": "./node_modules/.bin/node-sass -w src/css/app.scss dist/app.css",
     "build": "npm run sass && npm run babel"
   },
   "author": "",
