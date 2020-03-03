@@ -67,6 +67,18 @@ function mpc1_register_required_plugins()
             'required' => true,
         ),
 
+        array(
+            'name' => 'Insert Pages',
+            'slug' => 'insert-pages',
+            'required' => true,
+        ),
+
+        array(
+            'name' => 'Smart Slider 3',
+            'slug' => 'smart-slider-3',
+            'required' => true,
+        ),
+
         // This is an example of the use of 'is_callable' functionality. A user could - for instance -
         // have WPSEO installed *or* WPSEO Premium. The slug would in that last case be different, i.e.
         // 'wordpress-seo-premium'.
